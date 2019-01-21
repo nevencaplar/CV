@@ -49,6 +49,17 @@
 \sectionfont{\rmfamily\bfseries\LARGE}
 \subsectionfont{\rmfamily\bfseries\large}
 
+\usepackage{paralist}
+  \let\itemize\compactitem
+  \let\enditemize\endcompactitem
+  \let\enumerate\compactenum
+  \let\endenumerate\endcompactenum
+  \let\description\compactdesc
+  \let\enddescription\endcompactdesc
+  \pltopsep=\medskipamount
+  \plitemsep=1pt
+  \plparsep=1pt
+
 % Other possible font commands include:
 %\rmfamily is original
 % \ttfamily for teletype,
@@ -64,15 +75,15 @@
 \renewenvironment{itemize}{
   \begin{list}{}{
     \setlength{\leftmargin}{1.5em}
-    \setlength{\itemsep}{0.15em}
+    \setlength{\itemsep}{0.10em}
     \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0.25em}
+    \setlength{\parsep}{0.10em}
   }
 }{
   \end{list}
 }
-\setlist[enumerate]{itemsep=0.22em}
-
+\setlist[enumerate]{itemsep=0.0em}
+\setlist[enumerate]{parskip=0.0em}
 \begin{document}
 
 % Place name at left
@@ -144,8 +155,11 @@
 
 \begin{enumerate}
 
+\item 2018, \textbf{N. Caplar}, S. Tacchella \\
+Stochastic modeling of star-formation histories I: the scatter of the star-forming main sequence, submitted to MNRAS
+
 \item 2018, \textbf{N. Caplar}, S. Lilly, B. Trakhtenbrot\\
-AGN evolution from galaxy evolution viewpoint - II, accepted to APJ
+AGN evolution from galaxy evolution viewpoint - II, ApJ, 2018, 867, 148C
 
 \item 2018, L. Sartori, K. Schawinski, B. Trakhtenbrot, \textbf{N. Caplar}, E. Treister, M. Koss, M. Urry, C. Zhang \\
 A model for AGN variability on multiple time-scales, 2018, MNRAS, 476L, 34S
@@ -169,7 +183,8 @@ galaxies in the local Universe, ApJ, 2017, 845, 134W \\
 
 These publications are not directly connected to Astronomy. However, they are both ``big-data" papers for which I collected and reduced the data.
 
-\begin{enumerate}[resume]
+\begin{enumerate}
+\setcounter{enumi}{8}
 \item 2016, \textbf{N. Caplar}, S. Tacchella, S. Birrer \\ Quantitative evaluation of gender bias in astronomy,  2017, NatAs, 1E, 182C
 
 \item 2013,  \textbf{N. Caplar}, M. Suznjevic, M. Matijasevic  \\ Analysis of players' in-game performance vs rating: Case study of Heroes of Newerth, Foundation of Digital games 2013,  pp. 237-244
