@@ -1,0 +1,122 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+
+\usepackage[T1]{fontenc}
+
+\def\name{\textbf{Neven Caplar}}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {black hole-galaxy co-evolution, time-domain astronomy, AGN, CV},
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.9in, 9.8in},
+  left=0.7in,
+  top=0.7in
+}
+
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+\usepackage{sectsty}
+\sectionfont{\rmfamily\bfseries\LARGE}
+\subsectionfont{\rmfamily\bfseries\large}
+
+\usepackage{paralist}
+  \let\itemize\compactitem
+  \let\enditemize\endcompactitem
+  \let\enumerate\compactenum
+  \let\endenumerate\endcompactenum
+  \let\description\compactdesc
+  \let\enddescription\endcompactdesc
+  \pltopsep=\medskipamount
+  \plitemsep=1pt
+  \plparsep=1pt
+
+\setlength\parindent{0em}
+
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\itemsep}{0.10em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.10em}
+  }
+}{
+  \end{list}
+}
+\setlist[enumerate]{itemsep=0.0em}
+\setlist[enumerate]{parskip=0.0em}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+\bigskip
+
+\begin{minipage}[t]{0.645\textwidth}
+  Rubin Observatory / University of Washington\\
+  Department of Astronomy \\
+  Physics-Astronomy Bldg	 \\
+  Seattle, WA 98195-1700
+\end{minipage}
+\begin{minipage}[t]{0.345\textwidth}
+  Web: \href{www.ncaplar.com}{www.ncaplar.com} \\
+  Email: \href{ncaplar@uw.edu}{\nolinkurl{ncaplar@uw.edu}} \\
+  ORCid: \href{https://orcid.org/0000-0003-3287-5250}{0000-0003-3287-5250} \\
+  Github: \href{https://github.com/nevencaplar}{nevencaplar}
+\end{minipage}
+
+\section*{Work Experience}
+\begin{itemize}
+  \item Sep 2022 -- Present, Associate Director for LINCC Commissioning, University of Washington \par
+  \begin{itemize}
+    \item Lead the LSDB project, enabling scalable cross-matching and analysis of petabyte-scale astronomical datasets.
+    \item Coordinate cross-institutional efforts with the Space Telescope Science Institute, IPAC, Canadian Astronomy Data Centre, and CDS Strasbourg to provide spatially sharded, Parquet-based catalogs.
+    \item Manage a team of six software engineers and one scientist; responsibilities include strategic planning, sprint leadership, and communication with Principal Investigators.
+    \end{itemize}
+  \item Sep 2022 -- Present, Project Scientist, Rubin Observatory \par
+  \begin{itemize}
+	\item Developed scripts and code for assessing the quality of image differencing algorithms and construction of lightcurves.
+     \end{itemize}
+  \item Sep 2017 - Aug 2022, Associate Professional Specialist, Princeton University \par
+    \begin{itemize}
+    \item Designed algorithms for two-dimensional point spread function modeling for the Prime Focus Spectrograph (Subaru Telescope).
+    \item Mentored undergraduate and graduate students (Caltech, Princeton) on AGN variability projects and instrument calibration challenges.
+    \end{itemize}
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+  \item Ph.D., Science, Swiss Federal Institute of Technology, Zurich, Switzerland 2017 \par
+  \item MSc, Physics, University of Zagreb, Zagreb, Croatia, 2010 \par
+
+\end{itemize}
+
+\section*{Research}
+\textbf{Main Interests:} Large datasets analysis, software in astronomy, time-domain, stochastic variability. \par
+\textbf{Publications:} 19 papers (7 first-author), 6 conference proceedings  (3 first author), 1451 citations
+
+
+\section*{Skills and Tools}
+\begin{itemize}
+\item \textbf{Programming:} Python (scientific stack: JAX, DASK, Astropy), LSST Science Pipelines,  Github
+\item \textbf{Expertise:} Scalable data reduction, survey calibration, spectroscopy
+    \item \textbf{Other:} Wolfram Mathematica, Zemax OpticStudio
+\end{itemize}
+
+%\section*{References}
+% Available upon request.
+
+\end{document}
