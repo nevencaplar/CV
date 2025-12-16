@@ -3,7 +3,6 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{enumitem}
-
 \usepackage[T1]{fontenc}
 
 \def\name{\textbf{Neven Caplar}}
@@ -12,111 +11,109 @@
   colorlinks = true,
   urlcolor = black,
   pdfauthor = {\name},
-  pdfkeywords = {black hole-galaxy co-evolution, time-domain astronomy, AGN, CV},
   pdftitle = {\name: Resume},
   pdfsubject = {Resume},
   pdfpagemode = UseNone
 }
 
 \geometry{
-  body={6.9in, 9.8in},
+  body={6.9in, 9.6in},
   left=0.7in,
   top=0.7in
 }
 
-\pagestyle{myheadings}
-\markright{\name}
-\thispagestyle{empty}
-
-\usepackage{sectsty}
-\sectionfont{\rmfamily\bfseries\LARGE}
-\subsectionfont{\rmfamily\bfseries\large}
-
-\usepackage{paralist}
-  \let\itemize\compactitem
-  \let\enditemize\endcompactitem
-  \let\enumerate\compactenum
-  \let\endenumerate\endcompactenum
-  \let\description\compactdesc
-  \let\enddescription\endcompactdesc
-  \pltopsep=\medskipamount
-  \plitemsep=1pt
-  \plparsep=1pt
-
 \setlength\parindent{0em}
-
-\renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-    \setlength{\itemsep}{0.10em}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0.10em}
-  }
-}{
-  \end{list}
+\setlist[itemize]{
+  itemsep=2pt,
+  topsep=1pt,
+  parsep=0.5pt,
+  partopsep=0.5pt
 }
-\setlist[enumerate]{itemsep=0.0em}
-\setlist[enumerate]{parskip=0.0em}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.6\baselineskip}{0.3\baselineskip}
 
 \begin{document}
-
-% Place name at left
+\pagenumbering{gobble}
 {\huge \name}
 
 \bigskip
 
-\begin{minipage}[t]{0.645\textwidth}
-  Rubin Observatory / University of Washington\\
-  Department of Astronomy \\
-  Physics-Astronomy Bldg	 \\
-  Seattle, WA 98195-1700
+\begin{minipage}[t]{0.65\textwidth}
+  LINCC Frameworks @ University of Washington \\
+  Seattle, WA, USA \\
+  \href{mailto:ncaplar@uw.edu}{ncaplar@uw.edu} 
 \end{minipage}
-\begin{minipage}[t]{0.345\textwidth}
-  Web: \href{www.ncaplar.com}{www.ncaplar.com} \\
-  Email: \href{ncaplar@uw.edu}{\nolinkurl{ncaplar@uw.edu}} \\
-  ORCid: \href{https://orcid.org/0000-0003-3287-5250}{0000-0003-3287-5250} \\
-  Github: \href{https://github.com/nevencaplar}{nevencaplar}
+\begin{minipage}[t]{0.35\textwidth}
+  Web: \href{https://www.ncaplar.com}{ncaplar.com} \\
+  GitHub: \href{https://github.com/nevencaplar}{nevencaplar} \\
+  Scholar: \href{https://scholar.google.com/citations?user=XXXXXXXX}{Google Scholar} \\
+  ORCID: \href{https://orcid.org/0000-0003-3287-5250}{0000-0003-3287-5250}
 \end{minipage}
 
-\section*{Work Experience}
+% =====================
+\section*{Professional Summary}
+
+Scientific data systems specialist with 8+ years of experience in large-scale astronomical
+surveys and data infrastructure. Background includes distributed data analysis, scientific
+pipeline development, and technical leadership on cross-institutional software efforts.
+Currently serving as scientific lead for scalable catalog analysis tools, coordinating
+engineering and science teams to deliver reliable, production-ready systems
+
+% =====================
+\section*{Experience}
+
+\textbf{University of Washington / LINCC Frameworks} \hfill \textit{2022 -- Present} \\
+\textit{Research scientist/engineer}
+
 \begin{itemize}
-  \item Sep 2022 -- Present, Associate Director for LINCC Commissioning, University of Washington \par
-  \begin{itemize}
-    \item Lead the LSDB project, enabling scalable cross-matching and analysis of petabyte-scale astronomical datasets.
-    \item Coordinate cross-institutional efforts with the Space Telescope Science Institute, IPAC, Canadian Astronomy Data Centre, and CDS Strasbourg to provide spatially sharded, Parquet-based catalogs.
-    \item Manage a team of six software engineers and one scientist; responsibilities include strategic planning, sprint leadership, and communication with Principal Investigators.
-    \end{itemize}
-  \item Sep 2022 -- Present, Project Scientist, Rubin Observatory \par
-  \begin{itemize}
-	\item Developed scripts and code for assessing the quality of image differencing algorithms and construction of lightcurves.
-     \end{itemize}
-  \item Sep 2017 - Aug 2022, Associate Professional Specialist, Princeton University \par
-    \begin{itemize}
-    \item Designed algorithms for two-dimensional point spread function modeling for the Prime Focus Spectrograph (Subaru Telescope).
-    \item Mentored undergraduate and graduate students (Caltech, Princeton) on AGN variability projects and instrument calibration challenges.
-    \end{itemize}
+  \item Scientific lead and project owner of LSDB software, enabling scalable analysis and
+        cross-matching of billion-object astronomical catalogs.
+  \item Own technical roadmap and guide architectural decisions for large-scale distributed data analysis
+  \item Coordinate cross-institutional development with NASA centers (Space Telescope, IPAC),
+        international data centers, and survey teams.
+  \item Manage a team of software engineers and scientists; lead planning and delivery.
 \end{itemize}
 
+\textbf{Vera C. Rubin Observatory (LSST)} \hfill \textit{2022 -- Present} \\
+\textit{Project Scientist}
+
+\begin{itemize}
+  \item Contribute to commissioning and validation of LSST time-domain pipelines,
+        including difference imaging and large-scale lightcurve construction.
+  \item Define scientific requirements and validation strategies for pipelines
+        processing nightly multi-terabyte data volumes.
+\end{itemize}
+
+\textbf{Princeton University} \hfill \textit{2017 -- 2022} \\
+\textit{Associate Professional Specialist}
+
+\begin{itemize}
+  \item Developed calibration algorithms for the Prime Focus Spectrograph (Subaru Telescope).
+  \item Applied physical modeling and machine-learning methods to improve calibration fidelity.
+\end{itemize}
+
+% =====================
 \section*{Education}
-\begin{itemize}
-  \item Ph.D., Science, Swiss Federal Institute of Technology, Zurich, Switzerland 2017 \par
-  \item MSc, Physics, University of Zagreb, Zagreb, Croatia, 2010 \par
 
-\end{itemize}
+\textbf{Ph.D., Science}, Swiss Federal Institute of Technogloy, Zürich \hfill 2017 \\
+\textbf{M.Sc., Physics}, University of Zagreb \hfill 2010
 
+% =====================
 \section*{Research}
-\textbf{Main Interests:} Large datasets analysis, software in astronomy, time-domain, stochastic variability. \par
-\textbf{Publications:} 19 papers (7 first-author), 6 conference proceedings  (3 first author), 1451 citations
 
-
-\section*{Skills and Tools}
 \begin{itemize}
-\item \textbf{Programming:} Python (scientific stack: JAX, DASK, Astropy), LSST Science Pipelines,  Github
-\item \textbf{Expertise:} Scalable data reduction, survey calibration, spectroscopy
-    \item \textbf{Other:} Wolfram Mathematica, Zemax OpticStudio
+  \item 20 peer-reviewed publications (7 first-author); $\sim$1{,}640 total citations
+  \item Ph.D. thesis: Evolution of the AGN Population in the Universe
+  \item Research areas: large-scale data analysis, time-domain astronomy,
+        survey pipelines, scientific software infrastructure
 \end{itemize}
 
-%\section*{References}
-% Available upon request.
+% =====================
+\section*{Skills}
+
+\textbf{Leadership:} technical project leadership, roadmap ownership, cross-institutional coordination \\
+\textbf{Data \& Software:} Python, distributed analytics (Dask), JAX, scientific pipelines, large catalogs \\
+\textbf{Domains:} time-domain surveys, data validation, scalable scientific infrastructure
 
 \end{document}
