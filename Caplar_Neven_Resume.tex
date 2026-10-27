@@ -10,16 +10,16 @@
 \hypersetup{
   colorlinks = true,
   urlcolor = black,
-  pdfauthor = {\name},
-  pdftitle = {\name: Resume},
+  pdfauthor = {Neven Caplar},
+  pdftitle = {Neven Caplar: Resume},
   pdfsubject = {Resume},
   pdfpagemode = UseNone
 }
 
 \geometry{
-  body={6.9in, 9.6in},
+  body={6.9in, 9.8in},
   left=0.7in,
-  top=0.7in
+  top=0.6in
 }
 
 \setlength\parindent{0em}
@@ -39,81 +39,81 @@
 
 \bigskip
 
-\begin{minipage}[t]{0.65\textwidth}
+\begin{minipage}[t]{0.63\textwidth}
   LINCC Frameworks @ University of Washington \\
   Seattle, WA, USA \\
-  \href{mailto:ncaplar@uw.edu}{ncaplar@uw.edu} 
+  \href{mailto:ncaplar@uw.edu}{ncaplar@uw.edu}
 \end{minipage}
 \begin{minipage}[t]{0.35\textwidth}
   Web: \href{https://www.ncaplar.com}{ncaplar.com} \\
   GitHub: \href{https://github.com/nevencaplar}{nevencaplar} \\
-  Scholar: \href{https://scholar.google.com/citations?user=XXXXXXXX}{Google Scholar} \\
+  Scholar: \href{https://scholar.google.com/citations?user=KrPhRDoAAAAJ}{KrPhRDoAAAAJ} \\
   ORCID: \href{https://orcid.org/0000-0003-3287-5250}{0000-0003-3287-5250}
 \end{minipage}
 
 % =====================
 \section*{Professional Summary}
 
-Scientific data systems specialist with 8+ years of experience in large-scale astronomical
-surveys and data infrastructure. Background includes distributed data analysis, scientific
-pipeline development, and technical leadership on cross-institutional software efforts.
-Currently serving as scientific lead for scalable catalog analysis tools, coordinating
-engineering and science teams to deliver reliable, production-ready systems
+Scientific data systems lead with 9+ years of experience building data platforms for large
+astronomical surveys. Lead the open-source HATS/LSDB format and toolkit for cross-matching and
+analyzing billion-row catalogs, used for data from Rubin Observatory and other large surveys.
+Co-PI on a U.S. Department of Energy (DOE) Genesis Mission project building a multimodal data service for AI model training.
 
 % =====================
 \section*{Experience}
 
 \textbf{University of Washington / LINCC Frameworks} \hfill \textit{2022 -- Present} \\
-\textit{Research scientist/engineer}
+\textit{Research Scientist/Engineer}
 
 \begin{itemize}
-  \item Scientific lead and project owner of LSDB software, enabling scalable analysis and
-        cross-matching of billion-object astronomical catalogs.
-  \item Own technical roadmap and guide architectural decisions for large-scale distributed data analysis
-  \item Coordinate cross-institutional development with NASA centers (Space Telescope, IPAC),
-        international data centers, and survey teams.
-  \item Manage a team of software engineers and scientists; lead planning and delivery.
+  \item Scientific lead and project owner of HATS/LSDB: a survey-agnostic, Parquet-based format and
+        Python toolkit for scalable analysis and cross-matching of billion-object catalogs.
+  \item Own the technical roadmap and guide architecture for distributed (Dask) catalog analysis;
+        extending the platform to upcoming surveys (Roman, Euclid, Gaia DR4, Schmidt Observatory System).
+  \item Co-PI, DOE Genesis Mission award (with Carnegie Mellon University and SLAC): unified multimodal
+        data service (catalogs, images, spectra) and streaming data loaders for AI model training.
+  \item Lead a team of 8 software engineers and scientists (UW, CMU); coordinate development
+        with NASA archives (STScI/MAST, IPAC/IRSA), international data centers, and survey teams.
 \end{itemize}
 
-\textbf{Vera C. Rubin Observatory (LSST)} \hfill \textit{2022 -- Present} \\
+\textbf{Vera C. Rubin Observatory} \hfill \textit{2022 -- 2025} \\
 \textit{Project Scientist}
 
 \begin{itemize}
-  \item Contribute to commissioning and validation of LSST time-domain pipelines,
-        including difference imaging and large-scale lightcurve construction.
-  \item Define scientific requirements and validation strategies for pipelines
-        processing nightly multi-terabyte data volumes.
+  \item Contributed to commissioning and validation of time-domain pipelines,
+        including difference imaging and large-scale light-curve construction.
+  \item Defined scientific requirements and validation strategies for pipelines
+        processing nightly multi-terabyte data volumes; co-author of the Data Preview 1 paper.
 \end{itemize}
 
 \textbf{Princeton University} \hfill \textit{2017 -- 2022} \\
 \textit{Associate Professional Specialist}
 
 \begin{itemize}
-  \item Developed calibration algorithms for the Prime Focus Spectrograph (Subaru Telescope).
-  \item Applied physical modeling and machine-learning methods to improve calibration fidelity.
+  \item Built the 2D point-spread-function model for the Prime Focus Spectrograph (Subaru Telescope)
+        data reduction pipeline, combining physical modeling and machine-learning methods.
 \end{itemize}
 
 % =====================
 \section*{Education}
 
-\textbf{Ph.D., Science}, Swiss Federal Institute of Technogloy, Zürich \hfill 2017 \\
+\textbf{Ph.D., Science}, Swiss Federal Institute of Technology (ETH) Zurich \hfill 2017 \\
 \textbf{M.Sc., Physics}, University of Zagreb \hfill 2010
 
 % =====================
 \section*{Research}
 
 \begin{itemize}
-  \item 20 peer-reviewed publications (7 first-author); $\sim$1{,}640 total citations
-  \item Ph.D. thesis: Evolution of the AGN Population in the Universe
-  \item Research areas: large-scale data analysis, time-domain astronomy,
-        survey pipelines, scientific software infrastructure
+  \item 22 peer-reviewed publications (7 first-author) plus 2 submitted; $\sim$1{,}960 citations
+  \item First author of the LSDB paper (ADASS 2024): large-scale catalog cross-matching and analytics
+  \item Ph.D. thesis on AGN population evolution; variability study of 28{,}000 AGN (2.4M measurements)
 \end{itemize}
 
 % =====================
 \section*{Skills}
 
-\textbf{Leadership:} technical project leadership, roadmap ownership, cross-institutional coordination \\
-\textbf{Data \& Software:} Python, distributed analytics (Dask), JAX, scientific pipelines, large catalogs \\
-\textbf{Domains:} time-domain surveys, data validation, scalable scientific infrastructure
+\textbf{Leadership:} project leadership, roadmap ownership, cross-institutional coordination, grant writing \\
+\textbf{Data \& Software:} Python, Dask, Parquet/PyArrow, pandas, JAX, HPC (SLURM), cloud storage \\
+\textbf{Domains:} large catalogs, time-domain surveys, data validation, data for AI/ML
 
 \end{document}
